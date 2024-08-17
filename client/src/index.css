@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.input-no-arrows::-webkit-outer-spin-button,
+.input-no-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-no-arrows {
+    -moz-appearance: textfield;
+}
+.caption {
+    margin-top: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  input[type="checkbox"]:checked ~ .caption,
+  input[type="radio"]:checked ~ .caption {
+    max-height: 800px; /* Adjust as necessary */
+  }
+  .pagination {
+    margin: 40px 0;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  .pagination a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .pagination .selected a {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .pagination .disabled a {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+  }
+  
+  .pagination .break {
+    padding: 8px 16px;
+    color: #6c757d;
+  }
+.tab-content{
+  display: none;
+}
+.tab-content.active{
+  display: block;
+}
