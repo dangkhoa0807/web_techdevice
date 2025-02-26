@@ -7,7 +7,7 @@ import CardHeader from '@mui/material/CardHeader'
 import type { AxiosError } from 'axios'
 import axios from 'axios'
 
-import dotenv from 'dotenv'
+import * as dotenv from 'dotenv'
 
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'

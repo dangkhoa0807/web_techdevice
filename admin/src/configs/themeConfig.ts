@@ -54,7 +54,7 @@ export type Config = {
 
 const themeConfig: Config = {
   templateName: 'Dashboard',
-  settingsCookieName: 'vuexy-mui-next-demo-1',
+  settingsCookieName: 'laptop-demo-1',
   mode: 'system', // 'system', 'light', 'dark'
   skin: 'default', // 'default', 'bordered'
   semiDark: false, // true, false

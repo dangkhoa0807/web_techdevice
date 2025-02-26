@@ -6,7 +6,7 @@ import Card from '@mui/material/Card'
 import CardHeader from '@mui/material/CardHeader'
 import axios from 'axios'
 
-import dotenv from 'dotenv'
+import * as dotenv from 'dotenv'
 
 interface IOrder {
   id: number

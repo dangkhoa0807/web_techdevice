@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/default */
 'use client'
 
 import React, { useState, useEffect } from 'react'
@@ -18,7 +20,7 @@ import { useForm, Controller } from 'react-hook-form'
 
 import Cookies from 'js-cookie'
 
-import dotenv from 'dotenv'
+import * as dotenv from 'dotenv'
 
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'

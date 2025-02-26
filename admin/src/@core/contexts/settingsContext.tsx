@@ -88,6 +88,8 @@ export const SettingsProvider = (props: Props) => {
   const updateSettings = (settings: Partial<Settings>, options?: UpdateSettingsOptions) => {
     const { updateCookie = true } = options || {}
 
+    console.log('settings', settings, options)
+    
     _updateSettingsState(prev => {
       const newSettings = { ...prev, ...settings }
 

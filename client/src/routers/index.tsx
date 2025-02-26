@@ -15,6 +15,7 @@ import Register from '../pages/client/Register';
 import Profile from '../pages/client/Profile';
 import Thank from '../pages/client/Thank';
 import Collection from '../pages/client/Collection';
+import Contact from '../pages/client/Contact';
 import RoutProvider from '../components/RoutProvider';
 export const router = createBrowserRouter([
   {
@@ -39,7 +40,9 @@ export const router = createBrowserRouter([
       },
       {
         path:"/checkout",
-        element:<Checkout />
+        element:<RoutProvider>
+                  <Checkout />
+                </RoutProvider>
       },
       {
         path:'product/:id',
@@ -47,7 +50,9 @@ export const router = createBrowserRouter([
       },
       {
         path:'profile',
-        element : <Profile />
+        element : <RoutProvider>
+                    <Profile />
+                  </RoutProvider>
       },
       {
         path: "/search",
@@ -56,6 +61,10 @@ export const router = createBrowserRouter([
       {
         path: "/collection",
         element: <Collection/>,
+      },
+      {
+        path: "/contact",
+        element: <Contact/>,
       },
     ]
   },

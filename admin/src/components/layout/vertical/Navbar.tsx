@@ -6,10 +6,11 @@ import axios from 'axios'
 
 import Cookies from 'js-cookie'
 
-import dotenv from 'dotenv'
+import * as dotenv from 'dotenv'
 
 // Component Imports
 import LayoutNavbar from '@layouts/components/vertical/Navbar'
+
 import NavbarContent from './NavbarContent'
 
 import { useUser } from '@/@core/hooks/userContext'

@@ -4,6 +4,7 @@ module.exports = {
     'jsx-a11y/alt-text': 'off',
     'react/display-name': 'off',
     'react/no-children-prop': 'off',
+    'import/no-unresolved': 'off',
     '@next/next/no-img-element': 'off',
     '@next/next/no-page-custom-font': 'off',
     '@typescript-eslint/consistent-type-imports': 'error',

@@ -10,6 +10,7 @@ import VerticalLayout from '@layouts/VerticalLayout'
 import HorizontalLayout from '@layouts/HorizontalLayout'
 
 // Component Imports
+
 import Providers from '@components/Providers'
 import Navigation from '@components/layout/vertical/Navigation'
 import Header from '@components/layout/horizontal/Header'
@@ -20,6 +21,8 @@ import ScrollToTop from '@core/components/scroll-to-top'
 
 // Util Imports
 import { getMode, getSystemMode } from '@core/utils/serverHelpers'
+  
+import Customizer from '@/@core/components/customizer/test'
 
 const Layout = async ({ children }: ChildrenType) => {
   // Vars
@@ -51,6 +54,7 @@ const Layout = async ({ children }: ChildrenType) => {
           <i className='tabler-arrow-up' />
         </Button>
       </ScrollToTop>
+      <Customizer dir={direction} />
     </Providers>
   )
 }

@@ -13,7 +13,8 @@ import Pagination from '@mui/material/Pagination'
 
 import { ToastContainer } from 'react-toastify'
 
-import dotenv from 'dotenv'
+
+import * as dotenv from 'dotenv'
 
 import UpdateProduct from './UpdateProduct'
 import DeleProduct from './DeleProduct'
