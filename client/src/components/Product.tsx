@@ -47,7 +47,7 @@ const Product: React.FC<Props>=(props)=> {
     </Link>
     <div className="p-5 group-hover:-translate-y-7 transition-transform ease-in duration-200" >
         <Link to={"http://localhost:3000/product/"+id}>
-            <h5 className="text-lg font-semibold tracking-tight text-gray-900 h-16 dark:text-white hover:text-blue-600  overflow-hidden ">{name}</h5>
+            <h5 className="text-lg font-semibold tracking-tight text-gray-900 h-14 dark:text-white hover:text-blue-600  overflow-hidden ">{name}</h5>
         </Link>
         {price_sales ? ( <span className="text-lg font-bold text-gray-800 dark:text-white">{price_sales.toLocaleString('vi', {style : 'currency', currency : 'VND'})} <span className=' line-through'>{price.toLocaleString('vi', {style : 'currency', currency : 'VND'})}</span></span>): (<span className="text-lg font-bold text-gray-800 dark:text-white">{price.toLocaleString('vi', {style : 'currency', currency : 'VND'})}</span>)}
        

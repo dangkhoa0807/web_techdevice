@@ -20,7 +20,7 @@ deloyCart:() => void
   
 
 const useCartStore = create<CartState>((set) => ({
-	cart: JSON.parse(localStorage.getItem('cart') || ''),
+	cart: JSON.parse(localStorage.getItem('cart') || '[]'),
 	addToCart: (item) => set((state) => {
 	  const updatedCart = [...state.cart, item];
 	  localStorage.setItem('cart', JSON.stringify(updatedCart));
